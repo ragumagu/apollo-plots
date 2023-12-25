@@ -11,7 +11,7 @@ ax = fig.add_subplot(111)
 
 ax.spines[['right', 'top']].set_visible(False)
 
-ax.set_ylim(140, 160)
+ax.set_ylim(140, 180)
 ax.set_yticks([140, 150, 160, 170, 180])
 ax.tick_params(axis="y", direction="in")
 ax.tick_params(axis="y", which="minor", direction="in")
@@ -22,8 +22,7 @@ ax.set_ylabel(r"CONDENSER EXIT"
               )
 ax.yaxis.set_label_coords(0.1, 1.1)
 
-plt.ylim(140, 180)
-plt.xlim(0, 5.1)
+ax.set_xlim(0, 5.1)
 
 ax.set_xticks([0, 1, 2, 3, 4, 5])
 ax.set_xticklabels(["127:30", "128:00", "128:30", "129:00", "129:30", "130:00"])
